@@ -23,13 +23,13 @@ Open CMD as Administrator and run:
 Bash
 python keylogger.py
 ```
-Technical Breakdown:
-Listener
-Uses pynput.keyboard.Listener to capture real-time events.
+##### **Technical Breakdown**
 
-Logging:
-Data is saved to keyfile.txt using the 'a' (append) mode to preserve previous logs.
+`Listener`
+Uses `pynput.keyboard.Listener` to capture real-time events.
 
-Persistence:
-The input() function keeps the main process active so the background listener can continue running.
+##### **Logging**
+Data is saved to `keyfile.txt` using the `'a'` (append) mode to preserve previous logs.
 
+##### **Persistence**
+The `input()` function keeps the main process active so the background listener can continue running.
