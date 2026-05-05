@@ -13,16 +13,20 @@ A Python-based security tool designed to monitor and log keyboard input to a loc
 ```bash
 pip install pynput
 2. Execute with Sudo (Linux/Kali)
-Bash
 sudo python3 keylogger.py
-3. Execute (Windows)
+## **3. Execute (Windows)**
 Open CMD as Administrator and run:
-
-Bash
 python keylogger.py
 Technical Breakdown
-Listener: Uses pynput.keyboard.Listener to capture real-time events.
+Listener
+Uses pynput.keyboard.Listener to capture real-time events.
 
-Logging: Data is saved to keyfile.txt using the 'a' (append) mode to preserve previous logs.
+Logging
+Data is saved to keyfile.txt using the 'a' (append) mode to preserve previous logs.
 
-Persistence: The input() function keeps the main process active so the background listener can continue running.
+Persistence
+The input() function keeps the main process active so the background listener can continue running.
+
+
+
+
